@@ -1,0 +1,41 @@
+mark{
+
+    background-color: yellow;
+}
+
+h3{
+    text-decoration: underline;
+}
+
+.firstcontent{
+    text-align: center;
+}
+
+.firstcontent  img{
+    height: 300px;
+    border: 5px solid red;
+}
+
+.secondcontent{
+    text-align: center;
+}
+
+.secondcontent #redbox{
+    color:red;
+    border: 1px solid red;
+
+}
+
+table, th, td {
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+
+  
+  .secondcontent img{
+    height: 300px;
+    border: 5px solid red;
+
+  }
