@@ -1,0 +1,11 @@
+STEPS DONE ONCE, WHEN YOU CREATE A NEW GIT REPOSITORY
+1. Create a repository on github
+2. Create a folder on your computer
+3. Initialize your LOCAL repository as a GIT REPOSITORY  git init
+4. Change the origin branch  git branch -M main
+5. Add a remote  git remote add origin link of your github repo
+STEPS DONE EVERYTIME YOU MAKE CHANGES ON THE CODE
+6. Add the changes to the staging area  git add .
+(means add EVERYTHING FROM THE GIT REPOSITORY)
+7. Commit the changes   git commit -m relevant comment
+8. Push to the github repository git push -u origin main
