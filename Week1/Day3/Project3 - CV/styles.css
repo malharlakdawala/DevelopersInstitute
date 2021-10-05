@@ -1,0 +1,135 @@
+/*font-family: 'Heebo', sans-serif;*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Heebo;
+    font-style: normal;
+}
+section {
+    background-color: #FFFFFF;
+}
+.firstsection {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.firstsectionleft {
+    width: 500px;
+    height: 300px;
+    margin-top: 230px;
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.firstsectionleft h1 {
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 60px;
+    color: #21243D;
+}
+.firstsectionleft p {
+    font-size: 16px;
+    line-height: 23px;
+    /* Dark Color */
+    color: #21243D;
+}
+.firstsectionleft a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    display: block;
+    background-color: #FF6464;
+    border-radius: 2px;
+    width: 200px;
+    line-height: 50px;
+    color: #FFFFFF;
+    text-align: center;
+}
+.firstsectionright {
+    margin-top: 200px;
+    margin-left: 120px;
+}
+.firstsectionright img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+.secondsection {
+    width: 100%;
+    height: 400px;
+    background-color: #EDF7FA;
+}
+.secondsection a {
+    color: #00A8CC;
+}
+.secondsectionnav {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.secondsectionsub {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.secondsectionfirst {
+    margin-top: 10px;
+    width: 48%;
+    height: 300px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+.secondsectionfirst h3 {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 38px;
+}
+.secondsectionfirst h6 {
+    line-height: 26px;
+}
+.thirdsection {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    margin: auto;
+    height: 700px;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+.works {
+    display: flex;
+}
+.worksleft {}
+.worksleft img {
+    width: 250px;
+    height: 180px;
+    border-radius: 6px;
+}
+.worksright {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.worksright h6 {
+    display: block;
+    width: 60px;
+    height: 25px;
+    border-radius: 16px;
+    color: white;
+    background-color: #142850;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 200px;
+}
