@@ -29,3 +29,23 @@
     margin-right: 2rem;
     margin-left: 2rem;
 }
+#thirdSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.thirdSection h2 {
+    font-family: bely-display;
+    font-size: 2rem;
+    font-weight: bold;
+}
+#thirdSectionimg {
+    width: 20rem;
+    margin-left: 10rem;
+    margin-top: 10rem;
+}
+@media only screen and (max-width: 600px) {
+    #thirdSectionimg {
+        width: 20rem;
+    }
+}
