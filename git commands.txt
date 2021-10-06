@@ -9,3 +9,8 @@ STEPS DONE EVERYTIME YOU MAKE CHANGES ON THE CODE
 (means add EVERYTHING FROM THE GIT REPOSITORY)
 7. Commit the changes   git commit -m relevant comment
 8. Push to the github repository git push -u origin main
+
+to access website:
+https://malharlakdawala.github.io/DevelopersInstitute/
+
+Week1/Day3/Project3%20-%20CV/
