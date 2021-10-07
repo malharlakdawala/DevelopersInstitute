@@ -18,3 +18,23 @@
     color: white;
     text-align: center;
 }
+.secondsection h2 {
+    font-family: bely-display;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+#thirdSectionimg {
+    width: 20rem;
+}
+.thirdSection h2 {
+    font-family: bely-display;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.roundeffect {
+    display: inline-block;
+    background-color: #71A894;
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    border-radius: 40px;
+    color: white;
+}
