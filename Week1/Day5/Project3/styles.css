@@ -1,8 +1,18 @@
+$total-lines: 6;
+/*
+** Leave these unless you want
+** to open a whole can of worms
+*/
+
+$left-offset: 29px;
+$clip-height: 50px;
+$line-height: $clip-height - 5px;
 html {
     background-color: #5138BE;
     height: 100%;
 }
 body {
+    background-color: #5138BE;
     color: #FFFFFF;
     display: flex;
 }
@@ -37,9 +47,9 @@ body {
 }
 .Words-liner:nth-child(even) {
     transform: skew(0deg, -30deg) scaleY(1.33333);
-} // Loop over the total lines and apply a left offset
+}
 @for $i from 1 through $total-lines+1 {
-    &:nth-child(#{$i}) {
+    .Words-liner :nth-child(#{$i}) {
         left: $left-offset * $i;
     }
     /*
