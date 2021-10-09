@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Neuomorphism Design
+        </title>
+        <link href="styles.css" rel="stylesheet" type="text/css">
+            <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+            </link>
+        </link>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <nav>
+                    <button type="button">
+                        <i data-feather="arrow-left">
+                        </i>
+                    </button>
+                    <button type="button">
+                        <i data-feather="search">
+                        </i>
+                    </button>
+                </nav>
+            </header>
+            <main>
+                <h1 class="t1">
+                    History
+                </h1>
+                <div class="toggle-group">
+                    <input id="today-date" name="date-choose" type="radio">
+                        <label class="t4" for="today-date">
+                            Today
+                        </label>
+                        <input checked="" id="yesterday-date" name="date-choose" type="radio">
+                            <label class="t4" for="yesterday-date">
+                                Yesterday
+                            </label>
+                        </input>
+                    </input>
+                </div>
+                <div class="chart">
+                    <div class="chart-label">
+                        <span class="t2">
+                            45%
+                        </span>
+                        <span class="text-muted">
+                            saving
+                        </span>
+                    </div>
+                    <svg class="progress" preserveaspectratio="xMidYMid meet" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" fill="transparent" r="40" stroke="#E2E8F0" stroke-width="7">
+                        </circle>
+                        <circle class="meter" cx="50" cy="50" fill="transparent" id="chartfill" r="40" stroke="#D53F8C" stroke-dasharray="245" stroke-dashoffset="245" stroke-linecap="round" stroke-width="7">
+                        </circle>
+                    </svg>
+                </div>
+                <button class="t4 w-100" id="btntransactions">
+                    Show my transactions
+                </button>
+            </main>
+            <nav>
+                <a class="btn text-muted" href="#">
+                    <i data-feather="home">
+                    </i>
+                </a>
+                <a class="btn text-muted" href="#">
+                    <i data-feather="credit-card">
+                    </i>
+                </a>
+                <a class="btn text-muted active" href="#">
+                    <i data-feather="trending-up">
+                    </i>
+                </a>
+                <a class="btn text-muted" href="#">
+                    <i data-feather="bell">
+                    </i>
+                </a>
+            </nav>
+        </div>
+    </body>
+</html>
