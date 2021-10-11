@@ -9,18 +9,19 @@ if (nstr1.indexOf("nemo") > -1) {
     alert(num);
 } else {
     alert("nemo not found")
-}
+}*/
 //Exc 3
 console.log("Exc3")
 let str1 = prompt("Enter numbers");
 let nstr1 = str1.split(",");
+console.log(nstr1);
 var total = 0;
 console.log(nstr1)
 for (var i in nstr1) {
     total += parseInt(nstr1[i]);
 }
 console.log(total);
-*/
+/*
 //Exc 4
 console.log("Exc4")
 //Exc 4
