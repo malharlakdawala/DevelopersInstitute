@@ -185,4 +185,30 @@
 
 //Exercise 9 : Vacations Costs
 
-function hotelCost()
+// function hotelCost() {
+//   let n = parseInt(prompt("Enter no. of nights"));
+//   return n * 140;
+// }
+// console.log(hotelCost());
+
+// function planeRideCost() {
+//   let loc = prompt("Enter location");
+//   if (loc == "London") {
+//     return 183;
+//   } else if (loc == "Paris") {
+//     return 220;
+//   } else {
+//     return 300;
+//   }
+// }
+// console.log(planeRideCost());
+
+function rentalCarCost() {
+  let n = parseInt(prompt("Enter no. of days car needed for rent"));
+  if (n > 11) {
+    return n * 40 * 0.05;
+  } else {
+    return n * 40;
+  }
+}
+console.log(rentalCarCost());
