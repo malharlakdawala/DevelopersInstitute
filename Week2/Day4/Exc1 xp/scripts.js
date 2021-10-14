@@ -68,3 +68,121 @@
 // checkNumber();
 
 //Exercise 4: Find The Numbers Divisible By 23
+
+// function isDivisible(n) {
+//   let sum = 0;
+//   console.log(`all the number divisible by ${n} are`);
+
+//   for (i = 1; i < 500; i++) {
+//     if (i % n == 0) {
+//       console.log(`${i}`);
+//       sum += i;
+//     }
+//   }
+//   console.log(`their sum is ${sum}`);
+// }
+// isDivisible(10);
+
+//Exercise 5 : Amazon Shopping
+
+// let amazonBasket = {
+//   glasses: 1,
+//   books: 2,
+//   floss: 100,
+// };
+
+// function checkBasket() {
+//   let n = prompt("Enter Item");
+
+//   for (let i in amazonBasket) {
+//     if (n == i) {
+//       console.log("Item present");
+//     }
+//   }
+// }
+// checkBasket();
+
+//Exercise 6 : What’s In My Wallet ?
+
+// function changeEnough(amountInWallet, priceOfItem) {
+//   let n =
+//     0.25 * amountInWallet[0] +
+//     0.1 * amountInWallet[1] +
+//     0.05 * amountInWallet[2] +
+//     0.01 * amountInWallet[3];
+
+//   if (priceOfItem > n) {
+//     console.log(true);
+//   } else {
+//     console.log(false);
+//   }
+// }
+// changeEnough([2, 100, 0, 0], 14.11);
+// changeEnough([0, 0, 20, 5], 0.75);
+
+//Exercise 7 : Shopping List
+
+// let stock = {
+//   banana: 6,
+//   apple: 0,
+//   pear: 12,
+//   orange: 32,
+//   blueberry: 1,
+// };
+
+// let prices = {
+//   banana: 4,
+//   apple: 2,
+//   pear: 1,
+//   orange: 1.5,
+//   blueberry: 10,
+// };
+
+// function myBill() {
+//   let sum = 0;
+//   for (let i in shoppingList) {
+//     if (stock[shoppingList[i]] > 0) {
+//       sum = sum + prices[shoppingList[i]];
+//       stock[shoppingList[i]] -= 1;
+//       console.log(
+//         `the updated quantity after billing of ${shoppingList[i]} is ${
+//           stock[shoppingList[i]]
+//         }`
+//       );
+//     }
+//   }
+//   console.log(`Total bill is ${sum}`);
+// }
+
+// let shoppingList = ["banana", "orange", "apple"];
+// myBill();
+
+//Exercise 8 : Tips
+
+// function tip() {
+//   let n = parseInt(prompt("Enter Amount"));
+//   if (n < 50) {
+//     console.log(
+//       `Your bill is ${n}, tip amount is ${
+//         n * 0.2
+//       } and total amount payable is ${n * 1.2}`
+//     );
+//   } else if (n >= 50 && n <= 200) {
+//     console.log(
+//       `Your bill is ${n}, tip amount is ${
+//         n * 0.15
+//       } and total amount payable is ${n * 1.15}`
+//     );
+//   } else if (n > 200) {
+//     console.log(
+//       `Your bill is ${n}, tip amount is ${
+//         n * 0.1
+//       } and total amount payable is ${n * 1.1}`
+//     );
+//   }
+// }
+// tip();
+
+//Exercise 9 : Vacations Costs
+
+function hotelCost()
