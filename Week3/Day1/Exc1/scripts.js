@@ -11,4 +11,6 @@ console.log(ulElement1, ulElement2);
 let liElement1 = ulElement1.lastElementChild.textContent;
 let liElement2 = ulElement2.children[1].textContent;
 
+liElement2 += " Smith";
+
 console.log(liElement1, liElement2);
