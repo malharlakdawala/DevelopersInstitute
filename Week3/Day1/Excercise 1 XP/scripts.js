@@ -1,25 +1,15 @@
-let planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter"];
-let color = ["red", "blue", "green", "purple", "yellow"];
-let moons = [1, 2, 1, 2, 5];
+let divId = document.getElementById("navBar");
 
-let sectionElements = document.getElementsByClassName("listPlanets")[0];
+divId.setAttribute("id", "socialNetworkNavigation");
 
-function showPlanets() {
-  for (let i = 0; i < planets.length; i++) {
-    let newDiv = document.createElement("div");
-    newDiv.className = "planet";
-    newDiv.textContent = planets[i];
-    newDiv.style.background = color[i];
+//2
+let ul = document.getElementsByTagName("ul")[0];
+let newLiPosition = document.getElementsByTagName("li")[4];
 
-    for (let j = 0; j < moons[i]; j++) {
-      let moonDiv = document.createElement("div");
-      moonDiv.className = "moon";
-      newDiv.appendChild(moonDiv);
-    }
-    // let newPlanet = document.textContent(planets[0]);
-    // newDiv.appendChild(newPlanet);
-    sectionElements.appendChild(newDiv);
-  }
-}
-
-showPlanets();
+let newLiElement = document.createElement("li");
+//let newLiTextNode = document.createTextNode("Logout");
+let newLiHref = document.createElement("a");
+newLiHref.setAttribute("href", "google.com");
+newLiHref.appendChild(document.createTextNode("Logout"));
+newLiElement.appendChild(newLiHref);
+ul.appendChild(newLiElement);
