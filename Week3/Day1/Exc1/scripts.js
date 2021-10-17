@@ -1,8 +1,14 @@
-let divelement = document.body.firstElementChild;
-let divelement2 = document.getElementById("container");
+let divElement1 = document.body.firstElementChild;
+let divElement2 = document.body.children[0];
 
-let ulelement1 = document.body.children[1];
-let ulelement2 = document.querySelectorAll(".list li");
+console.log(divElement1, divElement2);
 
-console.log(divelement, divelement2);
-console.log(ulelement1, ulelement2);
+let ulElement1 = divElement1.nextElementSibling;
+let ulElement2 = document.body.children[1];
+
+console.log(ulElement1, ulElement2);
+
+let liElement1 = ulElement1.lastElementChild.textContent;
+let liElement2 = ulElement2.children[1].textContent;
+
+console.log(liElement1, liElement2);
