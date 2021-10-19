@@ -1,4 +1,5 @@
 document.getElementById("lib-button").addEventListener("click", madLibs);
+
 let btn = document.createElement("button");
 btn.textContent = "Shuffle";
 btn.setAttribute("id", "shuffle");
@@ -27,27 +28,29 @@ function madLibs(event) {
 
   document.getElementById("shuffle").addEventListener("click", shuffle);
 }
+
 function shuffle(event) {
-  let inputText = ["noun", "adjective", "person", "verb", "place"];
-  let noun = document.getElementById("noun").value;
-  var words = [];
+  if (event.detail === 3) {
+    let inputText = ["noun", "adjective", "person", "verb", "place"];
+    let noun = document.getElementById("noun").value;
+    var words = [];
 
-  for (let i = 0; i < inputText.length; i++) {
-    words[i] = document.getElementById(inputText[i]).value;
+    for (let i = 0; i < inputText.length; i++) {
+      words[i] = document.getElementById(inputText[i]).value;
 
-    if (words[i] == "") {
-      alert("please input all the fields");
-      return;
+      if (words[i] == "") {
+        alert("please input all the fields");
+        return;
+      }
     }
+    let randomIndex = 0;
+    let sentence = [];
+    for (let i = words.length; i > 0; i--) {
+      randomIndex = Math.floor(Math.random() * i);
+      [words[randomIndex], words[i]] = [words[i], words[randomIndex]];
+    }
+    console.log(words.join(" "));
+
+    newPelement.appendChild(document.createTextNode(words));
   }
-  let temp = 0;
-  let randomIndex = 0;
-  let sentence = [];
-  console.log(words.length);
-  for (let i = words.length; i > 0; i--) {
-    randomIndex = Math.floor(Math.random() * i);
-    sentence[randomIndex] = words[i];
-  }
-  console.log(sentence.join(" "));
-  newPelement.appendChild(document.createTextNode(sentence));
 }
