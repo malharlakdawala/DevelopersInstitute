@@ -12,4 +12,4 @@ function addblocks() {
   divElement.appendChild(d);
 }
 
-btn.addEventListener("click", addblocks);
+//tn.addEventListener("click", addblocks);
