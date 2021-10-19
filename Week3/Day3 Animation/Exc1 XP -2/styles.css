@@ -1,0 +1,33 @@
+
+	  .bigBox {
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        background: green;
+        margin-top: 100px;
+        margin-left: 300px;
+      }
+      .smallBox {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        background-color: red;
+        margin-top: 250px;
+        margin-left: 50px;
+      }
+
+      .smallBoxAfterDrag {
+        background-color: white;
+      }
+	  
+	  .smalBoxDuringDrag{
+		border: 3px dashed green;
+	  }
+
+	  .bigBoxHover{
+		border: 3px dashed red;
+	  }
+
+	  .bigBoxAfterDrop{
+        background: red;
+	  }
