@@ -1,0 +1,21 @@
+body{
+  background-color: #5470B0;
+  padding: 0;
+  margin: 0;
+}
+
+a{
+display: flex;
+  text-decoration: none;
+width: 100px;
+height: 100px;
+background-color: #BDFCED;
+font-size: 80px;
+text-align: center;
+justify-content: center;
+}
+
+#container{
+  width: 100%;
+  display: inline-flex;
+}

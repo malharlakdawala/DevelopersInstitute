@@ -33,7 +33,7 @@ addTheListeners();
 // create the dragging Over function
 function draggingOver(event) {
   event.preventDefault();
-  // console.log(event.target)
+  //console.log(event.target);
   event.target.style.background = "yellow";
 }
 
