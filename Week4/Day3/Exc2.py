@@ -28,3 +28,25 @@
 # print(sum)
 
 #Exercise 5 : Cars
+# a = "Volkswagen, Toyota, Ford Motor, Honda, Chevrolet"
+# a=a.split(",")
+# print(f"no. of car mfg companies are  {len(a)}")
+# count_o = 0
+# count_not_i=0
+# for n in a:
+#     if "o" in n:
+#         count_o= count_o+1
+#     if "i" not in n:
+#         count_not_i+=1
+# print(count_o,count_not_i)
+
+b =["Honda","Volkswagen", "Toyota", "Ford Motor", "Honda", "Chevrolet", "Toyota"]
+b=list(set(b))
+str=" "
+d=" ".join(b)
+print(d)
+e=sorted(b)
+f=[]
+for n in e:
+    f.append(n[::-1])
+print(f)
