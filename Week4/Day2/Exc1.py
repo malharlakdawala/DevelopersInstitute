@@ -67,9 +67,61 @@
 #     print("not in list")
 
 # 10
-topping = ""
-a = []
-while topping != "quit":
-    topping = input("enter pizza topping ")
-    a.append(topping)
-print(a)
+# flag=0
+# topping = ""
+# a = []
+# while flag==0:
+#     topping = input("enter pizza topping ")
+#     if topping!="quit":
+#         print(f"pizza topping {topping} will be added in your pizza")
+#         a.append(topping)
+#     else:
+#         break
+# print(a)
+# print(f"price is {10+len(a)*2.5}")
+
+# 11
+# number_of_family_members = int(input("how many family members you have? ")) #3
+# a=[]
+# sum=0
+# c=number_of_family_members
+# number_of_family_members=1
+# while number_of_family_members==c:
+#     b=int(input(f"Person {number_of_family_members}, please share your age? "))
+#     if b<=3:
+#         price=0
+#     elif 3<b<=12:
+#         price=10
+#     else: price=15
+#     sum=sum+price
+#     number_of_family_members+=1
+# print(f"total family members are {number_of_family_members} and their price is {sum}")
+
+# 12  Who Is Under 16?
+# a=["Vinod", "Rohan", "Malhar", "Sonakshi"]
+# for n in a:
+#     b=int(input(f"{n}, please tell your age? "))
+#     if b<16: a.remove(n)
+# print(a)
+
+# 13
+# sandwich_orders =["Vegetable Sandwich", "Grill Sandwich", "Toast Sandwich", "Cheese Sandwich"]
+# finished_sandwiches=[]
+# for n in sandwich_orders:
+#     #do some operation, so that sandwich is made
+#     print(f"{n} is made")
+#     finished_sandwiches.append(n)
+# print(finished_sandwiches)
+
+# 14
+
+sandwich_orders = ["Vegetable Sandwich", "Pastrami Sandwich", "Grill Sandwich", "Pastrami Sandwich", "Toast Sandwich",
+                   "Pastrami Sandwich", "Cheese Sandwich"]
+print("Pastrami Sandwich is over")
+finished_sandwiches=[]
+for n in sandwich_orders:
+    #do some operation, so that sandwich is made
+    if(n!="Pastrami Sandwich"):
+        print(f"{n} is made")
+        finished_sandwiches.append(n)
+print(finished_sandwiches)
