@@ -22,6 +22,7 @@ while True:
         count-=1
         if word_masked_list==word:
             print("You Win")
+            break
 
 #covert word to list, using list(), make a copy of the generated word's length,
 #for each new letter, check if it is there in original word, if yes, convert index of that word in masked list to input letter
