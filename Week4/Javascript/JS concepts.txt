@@ -45,5 +45,7 @@ myArray.forEach((number, i, arr) => {
 });
 console.log(myArray)  //output : [ 4, 6, 8, 10, 12 ]
 
+can play with objects in arrays, using push, direct add etc method, chk excercises for better understanding.
+
 
 Check ziv's video for forEach, after break
