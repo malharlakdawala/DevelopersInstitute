@@ -1,0 +1,49 @@
+
+//ternary operator
+if else
+
+condition ? True : False
+
+
+Arrow Functions
+
+traditional:
+let funcName = function (parameters) {
+  // statement to execute
+}
+funcName(arguments)
+
+
+
+arrow approach:
+let funcName = (parameter) => {
+// statement to execute
+}
+
+let show = (name, age) => {
+    console.log(name, age);
+}
+show("Sarah",20)
+
+let show = (x, y) => x + y
+let show = x => x*2
+
+
+
+forEach
+let myArray = [2, 3, 4, 5, 6];
+
+myArray.forEach((number, index, arr1) => {
+    console.log("number: ", number) // logs each element of the array
+    console.log("index: ", index) // logs each index of the array
+    arr1[index] = item+ 2 //result will be myArray = [4,5,6,7,8] //arr1 will create new array, do modifications and store it in original array (myArray)
+});
+
+
+myArray.forEach((number, i, arr) => {
+    arr[i] = arr[i] * 2; //result will be stored in myArray once console logged
+});
+console.log(myArray)  //output : [ 4, 6, 8, 10, 12 ]
+
+
+Check ziv's video for forEach, after break
