@@ -99,7 +99,16 @@ mumbai_zoo.get_animals()
 mumbai_zoo.sort_animals()
 mumbai_zoo.get_animals()
 
-
+# need help with below. list to dictionary conversion?
+# Create a method called sort_animals that sorts the animals alphabetically and groups them together based on their first letter.
+# Example
+#
+# {
+#     1: "Ape",
+#     2: ["Baboon", "Bear"],
+#     3: ['Cat', 'Cougar'],
+#     4: ['Eel', 'Emu']
+# }
 
 
 
