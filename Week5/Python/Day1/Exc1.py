@@ -63,51 +63,103 @@
 #
 # Exercise 4 : Afternoon At The Zoo
 
-class zoo:
-    def __init__(self,zoo_name):
+# class zoo:
+#     def __init__(self,zoo_name):
+#         self.name = zoo_name
+#         self.animals=[]
+#
+#     def add_animal(self, new_animal):
+#         if new_animal not in self.animals:
+#             self.animals.append(new_animal)
+#
+#     def get_animals(self):
+#         print(*self.animals)
+#
+#     def sell_animal(self,animal_sold):
+#         if animal_sold in self.animals:
+#             self.animals.remove(animal_sold)
+#
+#     # def sort_animals(self):
+#     #     self.animals.sort()
+#     #     for val, k in self.animals:
+#     #         print(k)
+#     #
+#     def sort_animals(self):
+#         groups=defaultdict(list)
+#         for animal in self.animals:
+#             groups[animal[0]].append(animal)
+#         animal_sorted = sorted(groups.values())
+#         self.index_animal = {}
+#         for index, animal in enumerate(animal_sorted):
+#             self.index_animal[index+1]=animal
+#
+#
+#
+#
+# mumbai_zoo = zoo("Mumbai Zoo")
+# mumbai_zoo.add_animal("peacock")
+# mumbai_zoo.add_animal("lion")
+# mumbai_zoo.add_animal("ape")
+# mumbai_zoo.add_animal("baboon")
+# mumbai_zoo.add_animal("bear")
+# mumbai_zoo.add_animal("cat")
+# mumbai_zoo.add_animal("cougar")
+#
+# mumbai_zoo.get_animals()
+# mumbai_zoo.sort_animals()
+# mumbai_zoo.get_animals()
+
+
+class Zoo:
+    def __init__(self, zoo_name):
         self.name = zoo_name
-        self.animals=[]
+        self.animals = []
 
     def add_animal(self, new_animal):
-        if new_animal not in self.animals:
+        '''This method adds the new_animal
+        to the animals list as long as it isn't already in the list.'''
+        if not new_animal in self.animals:
             self.animals.append(new_animal)
 
     def get_animals(self):
-        print(*self.animals)
+        '''prints all the animals of the zoo.'''
+        for animal in self.animals:
+            print(animal)
 
-    def sell_animal(self,animal_sold):
+    def sell_animal(self, animal_sold):
+        '''removes the animal from the list if it exists in the list.'''
         if animal_sold in self.animals:
             self.animals.remove(animal_sold)
 
-    # def sort_animals(self):
-    #     self.animals.sort()
-    #     for val, k in self.animals:
-    #         print(k)
-    #
     def sort_animals(self):
-        groups=defaultdict(list)
-        for animal in self.animals:
-            groups[animal[0]].append(animal)
-        animal_sorted = sorted(groups.values())
-        self.index_animal = {}
-        for index, animal in enumerate(animal_sorted):
-            self.index_animal[index+1]=animal
+        '''Create a method called sort_animals that sorts the animals
+         alphabetically and groups them together based on their first letter.'''
+        animals_lists = []
+        for animal in sorted(self.animals):
+            print('current animal:', animal)
+            if not animals_lists:
+                animals_lists.append([animal])
+
+            else:
+                print(f"current animal first letter: {animal[0]}")
+                print(f"last list: {animals_lists[-1]}")
+                print(f"first object in last list: {animals_lists[-1][0]}")
+                print(f"first letter of first object in last list: {animals_lists[-1][0][0]}")
+                if animal[0] == animals_lists[-1][0][0]:
+                    print('matches last object')
+                    animals_lists[-1].append(animal)
+                else:
+                    animals_lists.append([animal])
+
+            print(animals_lists)
 
 
+ramat_gan_safari = Zoo('Ramat Gan Safari')
+for animal in ['Cat', 'Cougar', "Baboon", 'Eel', 'Emu', "Baboon", "Baboon", "Baboon", "Bear", "Ape", ]:
+    ramat_gan_safari.add_animal(animal)
 
+ramat_gan_safari.sort_animals()
 
-mumbai_zoo = zoo("Mumbai Zoo")
-mumbai_zoo.add_animal("peacock")
-mumbai_zoo.add_animal("lion")
-mumbai_zoo.add_animal("ape")
-mumbai_zoo.add_animal("baboon")
-mumbai_zoo.add_animal("bear")
-mumbai_zoo.add_animal("cat")
-mumbai_zoo.add_animal("cougar")
-
-mumbai_zoo.get_animals()
-mumbai_zoo.sort_animals()
-mumbai_zoo.get_animals()
 
 # need help with below. list to dictionary conversion?
 # Create a method called sort_animals that sorts the animals alphabetically and groups them together based on their first letter.
