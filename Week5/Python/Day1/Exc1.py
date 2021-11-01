@@ -79,10 +79,20 @@ class zoo:
         if animal_sold in self.animals:
             self.animals.remove(animal_sold)
 
+    # def sort_animals(self):
+    #     self.animals.sort()
+    #     for val, k in self.animals:
+    #         print(k)
+    #
     def sort_animals(self):
-        self.animals.sort()
-        for val, k in self.animals:
-            print(k)
+        groups=defaultdict(list)
+        for animal in self.animals:
+            groups[animal[0]].append(animal)
+        animal_sorted = sorted(groups.values())
+        self.index_animal = {}
+        for index, animal in enumerate(animal_sorted):
+            self.index_animal[index+1]=animal
+
 
 
 
