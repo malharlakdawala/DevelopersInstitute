@@ -141,12 +141,12 @@ class Zoo:
                 animals_lists.append([animal])
 
             else:
-                print(f"current animal first letter: {animal[0]}")
-                print(f"last list: {animals_lists[-1]}")
-                print(f"first object in last list: {animals_lists[-1][0]}")
-                print(f"first letter of first object in last list: {animals_lists[-1][0][0]}")
+                # print(f"current animal first letter: {animal[0]}")
+                # print(f"last list: {animals_lists[-1]}")
+                # print(f"first object in last list: {animals_lists[-1][0]}")
+                # print(f"first letter of first object in last list: {animals_lists[-1][0][0]}")
                 if animal[0] == animals_lists[-1][0][0]:
-                    print('matches last object')
+                    # print('matches last object')
                     animals_lists[-1].append(animal)
                 else:
                     animals_lists.append([animal])

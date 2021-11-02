@@ -89,9 +89,10 @@ class Petdog(Dog):
     def do_a_trick(self):
         random_print_list = [f"{self.name} does a barell roll", f"{self.name} does stands on his back legs",
                              f"{self.name} shakes your hand", f"{self.name} plays dead"]
-        if self._trained:
-            print(random_print_list[random.randint(0, 3)])
+        if self.trained:
+            print(random_print_list[random.randint(0, 4)])
 
 
 rex = Petdog("rex", 5, 12)
 rex.train()
+rex.do_a_trick()
