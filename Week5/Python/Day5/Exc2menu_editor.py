@@ -1,7 +1,7 @@
 from Exc2menu_manager import MenuManager
-
-def load_manager(menu2):
-    pass
+#
+# def load_manager(menu2):
+#     pass
 def show_user_menu():
     menu_input = input('''
     MENU:

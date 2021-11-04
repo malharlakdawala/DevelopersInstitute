@@ -37,7 +37,11 @@ sampleJson = """{
    }
 }"""
 
-json_object =json.loads(sampleJson)
 
+json_object =json.loads(sampleJson)
+#print(json_object)
+print(json_object["company"]["employee"]["payable"]["salary"]) #salary
+json_object["company"]["employee"]["birth_date"]="20/11/1989"
+print(json_object)
 with open("samplefile.json","w") as file:
     json.dump(json_object,file)

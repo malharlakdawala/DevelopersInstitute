@@ -5,16 +5,16 @@
       "price": 30
     },
     {
-      "name": "Milkshake",
-      "price": 22.5
-    },
-    {
       "name": "Artichoke",
       "price": 18
     },
     {
       "name": "Beef stew",
       "price": 52.5
+    },
+    {
+      "name": "Burger",
+      "price": 25
     }
   ]
 }
