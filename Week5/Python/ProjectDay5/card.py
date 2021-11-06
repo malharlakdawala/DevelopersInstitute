@@ -19,8 +19,11 @@ class Card:
                 break
 
 a=Card()
-for i in range(55):
+for i in range(45):
     a.deal()
 
 # def deal
-# from above array, do random [i][j], show value at ij, store i,j in black list, next time compare new i,j pair with blacklist, allow only positive ones/
+
+# create an array of cards in init, for deal, select random number between 0 to 51
+# create a blacklist, which holds all random no. generated, check if new random no. is not
+# there in blacklist, if true, then print value at that index, append that no. in blacklist
