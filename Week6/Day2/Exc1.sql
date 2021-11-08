@@ -26,3 +26,15 @@
 --from purchases
 --inner join customers on purchases.customer_id = customers.cust_id
 --inner join items on purchases.item_id = items.item_id
+/*
+select customers.first_name, customers.last_name, items.item_name, items.item_price
+from purchases
+inner join customers on purchases.customer_id = customers.cust_id
+inner join items on purchases.item_id = items.item_id
+where customer_id = 4
+*/
+select customers.first_name, customers.last_name, items.item_name, items.item_price
+from purchases
+inner join customers on purchases.customer_id = customers.cust_id
+inner join items on purchases.item_id = items.item_id
+where items.item_name = 'Large Desk' or items.item_name = 'Small Desk' 
