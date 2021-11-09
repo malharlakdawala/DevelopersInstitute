@@ -1,0 +1,5 @@
+--select rating,count(*) from film group by rating
+--select*from film where (rating='G' or rating='PG-13') and length<120 and rental_rate<3 order by title asc
+--UPDATE customer set first_name='Malhar', last_name='Lakdawala' where customer_id =1
+--select*from customer where customer_id=1
+--update address set address='dummy address ' where address_id=1
