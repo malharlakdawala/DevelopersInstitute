@@ -8,7 +8,7 @@ from kiteconnect import KiteConnect
 import logging
 import os
 
-cwd = os.chdir("D:\\Udemy\\Zerodha KiteConnect API\\1_account_authorization")
+cwd = os.chdir("D:\Developers Institute\DevelopersInstitute\Week7\Hackathon")
 
 #generate trading session
 access_token = open("access_token.txt",'r').read()
@@ -48,3 +48,5 @@ def placeBracketOrder(symbol,buy_sell,quantity,atr,price):
                     squareoff=int(6*atr), 
                     stoploss=int(3*atr), 
                     trailing_stoploss=2)
+
+placeMarketOrder("ACC","buy",1)
