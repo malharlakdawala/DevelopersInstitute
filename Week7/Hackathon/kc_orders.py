@@ -49,4 +49,4 @@ def placeBracketOrder(symbol,buy_sell,quantity,atr,price):
                     stoploss=int(3*atr), 
                     trailing_stoploss=2)
 
-placeMarketOrder("ACC","buy",1)
+placeMarketOrder("ACC","sell",1)
