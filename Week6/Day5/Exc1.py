@@ -47,10 +47,10 @@ class MenuItem:
         for i in result:
             print(i)
 
-item = MenuItem()
-# item.save('Veggie Burger', 36)
-# item.save('Dosa', 46)
-# item.save('Idli', 32)
-item.update('Idli', 58)
-item.all()
-connection.close()
+# item = MenuItem()
+# # item.save('Veggie Burger', 36)
+# # item.save('Dosa', 46)
+# # item.save('Idli', 32)
+# item.update('Idli', 58)
+# item.all()
+# connection.close()
