@@ -25,8 +25,13 @@ SELECT DISTINCT first_name FROM actors ORDER BY first_name DESC;
 
 SELECT * FROM actors WHERE first_name not in ('Matt','Lea','Davis');
 
+select first_name,last_name from employees where hire_date between '1/1/1987' and '31/12/1987'
+
 SELECT first_name, last_name, sum(number_oscars) FROM actors GROUP BY first_name, last_name;
 
+SELECT first_Name ||' '|| last_name as "Name", salary from employees order by salary asc
+
+SELECT first_name from employees where first_name not ilike '%[0-9]%'
 
 UPDATE actors SET age='1970-01-01' WHERE first_name='Matt' AND last_name='Damon';
 
