@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Zerodha Kite Connect Intro - Placing orders
-
-@author: Mayank Rasu (http://rasuquant.com/wp/)
+#Buy / Sell stocks directly from zerodha
 """
 from kiteconnect import KiteConnect
 import logging
