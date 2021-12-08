@@ -6,10 +6,15 @@ import numpy as np
 import pandas as pd
 from stocktrends import Renko
 import statsmodels.api as sm
-#from alpha_vantage.timeseries import TimeSeries
 import copy
 import datetime as dt
 import yfinance as yf
+from kc_orders import OrderPlace
+import time
+from kiteconnect import KiteConnect
+import os
+
+
 
 
 def MACD(DF,a,b,c):
@@ -106,7 +111,8 @@ def max_dd(DF):
 #stocks = ["SBIN.NS","JSWSTEEL.BO","JINDALSTEL.BO","WIPRO.BO","NTPC.BO","BANKBARODA.BO","ADANIENT.BO","AMBUJACEM.BO","APOLLOHOSP.BO","BOSCHLTD.BO","ULTRACEMCO.BO","DABUR.BO","DRREDDY.BO","EICHERMOT.BO","MUTHOOTFIN.BO","HAVELLS.BO","HCLTECH.BO","HEROMOTOCO.BO","HINDALCO.BO","HINDUNILVR.BO","ICICIBANK.BO","LT.BO","PNB.BO","NESTLEIND.BO","NMDC.BO","BANKBARODA.NS","SBIN.BO","PEL.BO","TORNTPHARM.BO","AUROPHARMA.BO","TATASTEEL.BO","BAJAJ-AUTO.BO","BAJAJFINSV.BO","COALINDIA.BO","COLPAL.BO","RELIANCE.BO","PIIND.BO","HINDPETRO.BO","BAJAJHLDNG.BO","ADANIPORTS.NS","TATAMTRDVR.BO","ADANIPORTS.BO","PGHH.NS","CHOLAFIN.NS","DRREDDY.NS","HDFC.NS","SAIL.BO","DIVISLAB.NS","GODREJCP.NS","BPCL.NS","TCS.NS","MARUTI.NS","NAUKRI.BO","BAJAJHLDNG.NS","IOC.NS","JINDALSTEL.NS","KOTAKBANK.NS","BERGEPAINT.BO","BHARTIARTL.NS","JUBLFOOD.NS","INDIGO.NS","CADILAHC.NS","HCLTECH.NS","CADILAHC.BO","HEROMOTOCO.NS","AUROPHARMA.NS","PEL.NS","HINDUNILVR.NS","TECHM.NS","SHREECEM.BO","ASIANPAINT.NS","ULTRACEMCO.NS","SHREECEM.NS","EICHERMOT.NS","IGL.NS","MUTHOOTFIN.NS","JSWSTEEL.NS","RELIANCE.NS","ADANITRANS.BO","BAJAJ-AUTO.NS","GRASIM.BO","HINDALCO.NS","LT.NS","TITAN.NS","BRITANNIA.BO","DABUR.NS","YESBANK.BO","AXISBANK.NS","INDUSINDBK.BO","COALINDIA.NS","HIL.BO","BOSCHLTD.NS","DLF.BO","BIOCON.NS","CIPLA.NS","SIEMENS.BO","VEDL.BO"
 #]
 
-stocks = ["SBIN.NS","TATAMTRDVR.BO","EICHERMOT.NS","MUTHOOTFIN.NS","PEL.NS"]
+#stocks = ["SBIN.NS","TATAMTRDVR.BO","EICHERMOT.NS","MUTHOOTFIN.NS","PEL.NS"]
+stocks = ["SBIN.NS"]
 start = dt.datetime.today() - dt.timedelta(30)
 end = dt.datetime.today()
 cl_price = pd.DataFrame()  # empty dataframe which will be filled with closing prices of each stock
@@ -202,46 +208,45 @@ KPI_df=KPI_df.T
 
 print(KPI_df)
 
-Order Placing
-for ticker in tickers:
-    print("calculating daily returns for ",ticker)
-for i in range(len(ohlc_intraday[ticker])):
-    if tickers_signal[ticker] == "":
-        tickers_ret[ticker].append(0)
-        if i > 0:
-            if ohlc_renko[ticker]["bar_num"][i]>=2 and ohlc_renko[ticker]["macd"][i]>ohlc_renko[ticker]["macd_sig"][i] and ohlc_renko[ticker]["macd_slope"][i]>ohlc_renko[ticker]["macd_sig_slope"][i]:
-                tickers_signal[ticker] = "Buy"
-            elif ohlc_renko[ticker]["bar_num"][i]<=-2 and ohlc_renko[ticker]["macd"][i]<ohlc_renko[ticker]["macd_sig"][i] and ohlc_renko[ticker]["macd_slope"][i]<ohlc_renko[ticker]["macd_sig_slope"][i]:
-                tickers_signal[ticker] = "Sell"
-    
-    elif tickers_signal[ticker] == "Buy":
-        tickers_ret[ticker].append((ohlc_renko[ticker]["Adj Close"][i]/ohlc_renko[ticker]["Adj Close"][i-1])-1)
-        if i > 0:
-            if ohlc_renko[ticker]["bar_num"][i]<=-2 and ohlc_renko[ticker]["macd"][i]<ohlc_renko[ticker]["macd_sig"][i] and ohlc_renko[ticker]["macd_slope"][i]<ohlc_renko[ticker]["macd_sig_slope"][i]:
-                tickers_signal[ticker] = "Sell"
-            elif ohlc_renko[ticker]["macd"][i]<ohlc_renko[ticker]["macd_sig"][i] and ohlc_renko[ticker]["macd_slope"][i]<ohlc_renko[ticker]["macd_sig_slope"][i]:
-                tickers_signal[ticker] = ""
-            
-elif tickers_signal[ticker] == "Sell":
-    tickers_ret[ticker].append((ohlc_renko[ticker]["Adj Close"][i-1]/ohlc_renko[ticker]["Adj Close"][i])-1)
-    if i > 0:
-        if ohlc_renko[ticker]["bar_num"][i]>=2 and ohlc_renko[ticker]["macd"][i]>ohlc_renko[ticker]["macd_sig"][i] and ohlc_renko[ticker]["macd_slope"][i]>ohlc_renko[ticker]["macd_sig_slope"][i]:
-            tickers_signal[ticker] = "Buy"
-            elif ohlc_renko[ticker]["macd"][i]>ohlc_renko[ticker]["macd_sig"][i] and ohlc_renko[ticker]["macd_slope"][i]>ohlc_renko[ticker]["macd_sig_slope"][i]:
-                tickers_signal[ticker] = ""
-ohlc_renko[ticker]["ret"] = np.array(tickers_ret[ticker])
+# =============================================================================
+# ORDER PLACING
+# =============================================================================
 
 
+cwd = os.chdir("D:\Developers Institute\DevelopersInstitute\Week7\Hackathon")
 
-for ticker in tickers:
-    if tickers_signal[ticker] == "":
-        tickers_ret[ticker].append(0)
-        if ohlc_renko[ticker]["bar_num"][-1]>=2 and ohlc_renko[ticker]["macd"][-1]>ohlc_renko[ticker]["macd_sig"][-1] and ohlc_renko[ticker]["macd_slope"][i]>ohlc_renko[ticker]["macd_sig_slope"][-1]:
-            tickers_signal[ticker] = "Buy"
-                    
-            
+#generate trading session
+access_token = open("access_token.txt",'r').read()
+key_secret = open("api_key.txt",'r').read().split()
+kite = KiteConnect(api_key=key_secret[0])
+kite.set_access_token(access_token)
+
+# while True:
+#     for ticker in tickers:
+#         print(f"checking buy condition for {ticker}")
+#         if tickers_signal[ticker] == "Sell" and False:
+#             tickers_ret[ticker].append(0)
+#             if ohlc_renko[ticker]["bar_num"][-1]>=2 and ohlc_renko[ticker]["macd"][-1]>ohlc_renko[ticker]["macd_sig"][-1] and ohlc_renko[ticker]["macd_slope"][i]>ohlc_renko[ticker]["macd_sig_slope"][-1] and False:
+#                 tickers_signal[ticker] = "Buy"
+#                 company_name=ticker
+#                 OrderPlace.placeMarketOrder(company_name,"buy",1)
+#                 print(f"succesfully bought 1 share of {company_name}")
                 
+#         elif tickers_signal[ticker] == "Buy" and False:
+#             tickers_ret[ticker].append((ohlc_renko[ticker]["Adj Close"][-1]/ohlc_renko[ticker]["Adj Close"][-2])-2)
+#             if ohlc_renko[ticker]["bar_num"][-1]<=-2 and ohlc_renko[ticker]["macd"][-1]<ohlc_renko[ticker]["macd_sig"][-1] and ohlc_renko[ticker]["macd_slope"][-1]<ohlc_renko[ticker]["macd_sig_slope"][-1]:
+#                 tickers_signal[ticker] = "Sell"
+#                 company_name=ticker
+#                 OrderPlace.placeMarketOrder(company_name,"sell",1)
+#                 print(f"succesfully sold 1 share of {company_name}")
+#         print(f"Buy condition for {ticker} failed, no purchase done, will check after 5 mins again")
+#     time.sleep(900)
                 
+company_name="ACC"
+OrderPlace.placeMarketOrder(company_name,"buy",1)
+print(f"succesfully Bought 1 share of {company_name}")
     
-
+# company_name="ACC"
+# OrderPlace.placeMarketOrder(company_name,"sell",2)
+# print(f"succesfully Sold 1 share of {company_name}")
 
