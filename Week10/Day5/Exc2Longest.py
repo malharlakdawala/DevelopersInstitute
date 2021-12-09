@@ -10,5 +10,11 @@ def longest_sequence(arr):
             flag = 0
         flag_store.append(flag)
     print(max(flag_store))
+
+def longeset_sequence_dict(arr):
+    temp_dict={}
+    
+
+
 input_array = [6, 206, 4, 205, 100, 207, 5, 200, 208, 3, 201, 202, 203, 204]
 longest_sequence(input_array)
