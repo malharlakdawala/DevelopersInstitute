@@ -1,0 +1,100 @@
+{'search_metadata': {'id': '61bc36653824272fa7277f16', 'status': 'Success', 'json_endpoint': 'https://serpapi.com/searches/0a726832f9ce0993/61bc36653824272fa7277f16.json', 'created_at'
+: '2021-12-17 07:04:05 UTC', 'processed_at': '2021-12-17 07:04:05 UTC', 'google_url': 'https://www.google.com/search?q=kirana+store+ajmer&oq=kirana+store+ajmer&uule=w+CAIQICIPUmFqYXN0a
+GFuLEluZGlh&tbm=lcl&sourceid=chrome&ie=UTF-8', 'raw_html_file': 'https://serpapi.com/searches/0a726832f9ce0993/61bc36653824272fa7277f16.html', 'total_time_taken': 5.02}, 'search_parame
+ters': {'engine': 'google', 'q': 'kirana store ajmer', 'location_requested': 'rajasthan, india', 'location_used': 'Rajasthan,India', 'google_domain': 'google.com', 'device': 'desktop',
+ 'tbm': 'lcl'}, 'search_information': {'local_results_state': 'Results for exact spelling', 'query_displayed': 'kirana store ajmer'}, 'local_results': [{'position': 1, 'title': 'Jain K
+irana Store', 'place_id': '878701463323387706', 'lsig': 'AB86z5UtboXaZSx9kCnSjz7OGASl', 'place_id_search': 'https://serpapi.com/search.json?device=desktop&engine=google&google_domain=g
+oogle.com&location=rajasthan%2C+india&lsig=AB86z5UtboXaZSx9kCnSjz7OGASl&ludocid=878701463323387706&q=kirana+store+ajmer&tbm=lcl', 'type': 'General store', 'address': 'Medhiya Medhiya',
+ 'phone': '+91 81078 44995', 'thumbnail': 'https://serpapi.com/searches/61bc36653824272fa7277f16/images/f3e84653e4a733150f525b80c19bdbd012a874b6ddb112bd940b9e2054f8e6e8.png', 'gps_coor
+dinates': {'latitude': 26.4527297, 'longitude': 74.6372402}}, {'position': 2, 'title': 'Vikas Kirana Store', 'place_id': '4324278574143640046', 'lsig': 'AB86z5W_tT2RjUqcAfB984qojZc2',
+'place_id_search': 'https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&location=rajasthan%2C+india&lsig=AB86z5W_tT2RjUqcAfB984qojZc2&ludocid=43242785
+74143640046&q=kirana+store+ajmer&tbm=lcl', 'rating': 3.0, 'reviews': 5, 'type': 'General store', 'address': 'Ajay Nagar', 'phone': '+91 85598 84601', 'hours': 'Open ⋅ Closes 10PM', 'th
+umbnail': 'https://serpapi.com/searches/61bc36653824272fa7277f16/images/f3e84653e4a7331569fe788e7222b18ec5454830874316afc90a6cc8d83f54ec.png', 'gps_coordinates': {'latitude': 26.433970
+6, 'longitude': 74.6309607}}, {'position': 3, 'title': 'Vikram Kirana Store', 'place_id': '749591756688850944', 'lsig': 'AB86z5WoQj9YGALiMqK8DLs1UyzJ', 'place_id_search': 'https://serp
+api.com/search.json?device=desktop&engine=google&google_domain=google.com&location=rajasthan%2C+india&lsig=AB86z5WoQj9YGALiMqK8DLs1UyzJ&ludocid=749591756688850944&q=kirana+store+ajmer&
+tbm=lcl', 'type': 'General store', 'address': 'near Bus Stand', 'phone': '+91 88754 56517', 'thumbnail': 'https://serpapi.com/searches/61bc36653824272fa7277f16/images/f3e84653e4a73315d
+7b20d29396a7cae5836985d47b6aa707b8de6fe4279d73c.png', 'gps_coordinates': {'latitude': 26.469347199999998, 'longitude': 74.6445184}}, {'position': 4, 'title': 'Purushotam Kirana Store',
+ 'place_id': '6910059427963554515', 'lsig': 'AB86z5XK6lFujnvbm2Zx8isCHGlb', 'place_id_search': 'https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&lo
+cation=rajasthan%2C+india&lsig=AB86z5XK6lFujnvbm2Zx8isCHGlb&ludocid=6910059427963554515&q=kirana+store+ajmer&tbm=lcl', 'rating': 3.0, 'reviews': 4, 'type': 'General store', 'address':
+'Asha Ganj', 'hours': 'Open ⋅ Closes 10PM', 'thumbnail': 'https://serpapi.com/searches/61bc36653824272fa7277f16/images/f3e84653e4a73315b0991f9c512c2616c17328263804e7a213ea94997b2baf60.
+jpeg', 'gps_coordinates': {'latitude': 26.4450789, 'longitude': 74.63383639999999}}, {'position': 5, 'title': 'Rakesh Kirana Store', 'place_id': '8709120617796333658', 'lsig': 'AB86z5U
+qznkpBuU78rXC42hoVeih', 'place_id_search': 'https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&location=rajasthan%2C+india&lsig=AB86z5UqznkpBuU78rXC4
+2hoVeih&ludocid=8709120617796333658&q=kirana+store+ajmer&tbm=lcl', 'type': 'General store', 'address': 'Pandir Pandir', 'thumbnail': 'https://serpapi.com/searches/61bc36653824272fa7277
+f16/images/f3e84653e4a733159ad749df7b1e4a9f82efd6ccac8926fcc1719c3d308a096c.png', 'gps_coordinates': {'latitude': 26.443162200000003, 'longitude': 74.64031}}, {'position': 6, 'title':
+'Super Mart Kirana & General Store', 'place_id': '9368665378371310635', 'lsig': 'AB86z5WZgptOVbNUdqELUm3PxdLY', 'place_id_search': 'https://serpapi.com/search.json?device=desktop&engin
+e=google&google_domain=google.com&location=rajasthan%2C+india&lsig=AB86z5WZgptOVbNUdqELUm3PxdLY&ludocid=9368665378371310635&q=kirana+store+ajmer&tbm=lcl', 'rating': 3.8, 'reviews': 8,
+'type': 'Grocery store', 'address': 'Prithivi Raj Marg, Near BOB', 'phone': '+91 96362 98294', 'hours': 'Open ⋅ Closes 9PM', 'thumbnail': 'https://serpapi.com/searches/61bc36653824272f
+a7277f16/images/f3e84653e4a73315dafdd43959a203d909430939066df2dd9bf42bf351e304c9.png', 'gps_coordinates': {'latitude': 26.459407, 'longitude': 74.6358688}}, {'position': 7, 'title': 'A
+nita General Store', 'place_id': '665715082559063744', 'lsig': 'AB86z5WiN0qON0DMe4fc5tK1vhBn', 'place_id_search': 'https://serpapi.com/search.json?device=desktop&engine=google&google_d
+omain=google.com&location=rajasthan%2C+india&lsig=AB86z5WiN0qON0DMe4fc5tK1vhBn&ludocid=665715082559063744&q=kirana+store+ajmer&tbm=lcl', 'rating': 4.3, 'reviews': 28, 'type': 'General
+store', 'address': 'Near Street No. 3', 'phone': '+91 97832 96234', 'hours': 'Open ⋅ Closes 11PM', 'thumbnail': 'https://serpapi.com/searches/61bc36653824272fa7277f16/images/f3e84653e4
+a7331599ee2e735ece5caee6b1eca5fe8779775df429d80eae1f5a.png', 'gps_coordinates': {'latitude': 26.4319152, 'longitude': 74.64874879999999}}, {'position': 8, 'title': 'Aggarwal Kirana & P
+rovision Store', 'place_id': '5857922719258770429', 'lsig': 'AB86z5UNIMzg-yt1PNgZkmFm2RGe', 'place_id_search': 'https://serpapi.com/search.json?device=desktop&engine=google&google_doma
+in=google.com&location=rajasthan%2C+india&lsig=AB86z5UNIMzg-yt1PNgZkmFm2RGe&ludocid=5857922719258770429&q=kirana+store+ajmer&tbm=lcl', 'rating': 5.0, 'reviews': 4, 'type': 'General sto
+re', 'address': '168/22, Opp. Neelkamal Hotel', 'phone': '+91 87694 07011', 'hours': 'Open ⋅ Closes 10PM', 'thumbnail': 'https://serpapi.com/searches/61bc36653824272fa7277f16/images/f3
+e84653e4a7331551302fb0f4e32281adcd9195eb022b706d6aac31e8fc4ce3.png', 'gps_coordinates': {'latitude': 26.453243699999998, 'longitude': 74.6330258}}, {'position': 9, 'title': 'Summi Kira
+na Store', 'place_id': '2850248160489886007', 'lsig': 'AB86z5ViOip9afu5cynXTHDJWOfR', 'place_id_search': 'https://serpapi.com/search.json?device=desktop&engine=google&google_domain=goo
+gle.com&location=rajasthan%2C+india&lsig=AB86z5ViOip9afu5cynXTHDJWOfR&ludocid=2850248160489886007&q=kirana+store+ajmer&tbm=lcl', 'rating': 4.8, 'reviews': 5, 'type': 'General store', '
+address': 'Prem Nagar, Foy Sagar Road', 'phone': '+91 99821 13739', 'hours': 'Open ⋅ Closes 9PM', 'thumbnail': 'https://serpapi.com/searches/61bc36653824272fa7277f16/images/f3e84653e4a
+73315043e3bf06051166d9b28ef48969ba9fb96744075ab71c536.png', 'gps_coordinates': {'latitude': 26.4595761, 'longitude': 74.6135341}}, {'position': 10, 'title': 'Kuber Kirana Store', 'plac
+e_id': '13783454669996380864', 'lsig': 'AB86z5WmLFgcHRe2UYdZepUSMypJ', 'place_id_search': 'https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&locatio
+n=rajasthan%2C+india&lsig=AB86z5WmLFgcHRe2UYdZepUSMypJ&ludocid=13783454669996380864&q=kirana+store+ajmer&tbm=lcl', 'rating': 4.3, 'reviews': 8, 'type': 'General store', 'address': 'Sho
+p No. B-34, Makarwali Road, B Block, Panchsheel Nagar', 'phone': '+91 85619 38403', 'hours': 'Open ⋅ Closes 9PM', 'thumbnail': 'https://serpapi.com/searches/61bc36653824272fa7277f16/im
+ages/f3e84653e4a733157279d89c9f8ce498d9c56594164699eea1943c40c7f556d0.jpeg', 'gps_coordinates': {'latitude': 26.5093625, 'longitude': 74.6309571}}, {'position': 11, 'title': 'Jai Jwala
+ Kirana Store', 'place_id': '1239809589310914560', 'lsig': 'AB86z5UcBRrtHeOuWQeRP-_hAdyl', 'place_id_search': 'https://serpapi.com/search.json?device=desktop&engine=google&google_domai
+n=google.com&location=rajasthan%2C+india&lsig=AB86z5UcBRrtHeOuWQeRP-_hAdyl&ludocid=1239809589310914560&q=kirana+store+ajmer&tbm=lcl', 'type': 'General store', 'address': 'Bus Station',
+ 'phone': '+91 81041 89902', 'thumbnail': 'https://serpapi.com/searches/61bc36653824272fa7277f16/images/f3e84653e4a73315c11b52a1c6af0c70730635ea17ac64dadaadac4dff1f58dd.png', 'gps_coor
+dinates': {'latitude': 26.474770499999998, 'longitude': 74.64828609999999}}, {'position': 12, 'title': 'Vinod Kirana Store', 'place_id': '6913088587512074706', 'lsig': 'AB86z5VZ7rsW4nu
+rV5tI9vJ_gCay', 'place_id_search': 'https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&location=rajasthan%2C+india&lsig=AB86z5VZ7rsW4nurV5tI9vJ_gCay&
+ludocid=6913088587512074706&q=kirana+store+ajmer&tbm=lcl', 'rating': 4.0, 'reviews': 2, 'type': 'General store', 'address': 'CJ9V+HQX', 'hours': 'Open ⋅ Closes 10PM', 'thumbnail': 'htt
+ps://serpapi.com/searches/61bc36653824272fa7277f16/images/f3e84653e4a73315cf8869239bac3107d58269d951aa3b011994024342533296.png', 'gps_coordinates': {'latitude': 26.418985, 'longitude':
+ 74.6444901}}, {'position': 13, 'title': 'Rojana Ka Kirana', 'place_id': '5847876000631623983', 'lsig': 'AB86z5W0xgA4LBI74LJzvxc9s0gb', 'place_id_search': 'https://serpapi.com/search.j
+son?device=desktop&engine=google&google_domain=google.com&location=rajasthan%2C+india&lsig=AB86z5W0xgA4LBI74LJzvxc9s0gb&ludocid=5847876000631623983&q=kirana+store+ajmer&tbm=lcl', 'rati
+ng': 4.2, 'reviews': 6, 'type': 'General store', 'address': 'Near Kalpana School, Old Bus Stand Road, Ajay Nagar', 'phone': '+91 77260 10889', 'hours': 'Open ⋅ Closes 10PM', 'thumbnail
+': 'https://lh5.googleusercontent.com/p/AF1QipOWcLcujjBgE6A7amSCc4t62DTkeaKuyZBx8hGc=w90-h90-n-k-no', 'gps_coordinates': {'latitude': 26.433895999999997, 'longitude': 74.6281264}}, {'p
+osition': 14, 'title': 'Mahendra Singh Kirana And General Store', 'place_id': '6449504013930242460', 'lsig': 'AB86z5WamDz-vE_CclW9ux5xCWvE', 'place_id_search': 'https://serpapi.com/sea
+rch.json?device=desktop&engine=google&google_domain=google.com&location=rajasthan%2C+india&lsig=AB86z5WamDz-vE_CclW9ux5xCWvE&ludocid=6449504013930242460&q=kirana+store+ajmer&tbm=lcl',
+'rating': 4.7, 'reviews': 6, 'type': 'General store', 'address': 'Beawar Rd, opposite Shri Dev Narayan Mandir', 'hours': 'Open ⋅ Closes 10:30PM', 'thumbnail': 'https://lh5.googleuserco
+ntent.com/p/AF1QipMny1g62Zt3-lBLW4yL1qBIc3i91PGoJF9XO15l=w90-h90-n-k-no', 'gps_coordinates': {'latitude': 26.419567299999997, 'longitude': 74.63527119999999}}, {'position': 15, 'title'
+: 'Moolchand Kirana', 'place_id': '9163722944759831167', 'lsig': 'AB86z5UOKuSSzEpkpF2pgNo3KH6-', 'place_id_search': 'https://serpapi.com/search.json?device=desktop&engine=google&google
+_domain=google.com&location=rajasthan%2C+india&lsig=AB86z5UOKuSSzEpkpF2pgNo3KH6-&ludocid=9163722944759831167&q=kirana+store+ajmer&tbm=lcl', 'rating': 4.0, 'reviews': 6, 'type': 'Genera
+l store', 'address': 'City Power House, near Gautam School', 'phone': '+91 96606 06044', 'hours': 'Open ⋅ Closes 10:30PM', 'thumbnail': 'https://serpapi.com/searches/61bc36653824272fa7
+277f16/images/f3e84653e4a733155db5a4889e201bd8520e211ac3a6be87abae78671c5c4d84.png', 'gps_coordinates': {'latitude': 26.463579199999998, 'longitude': 74.6356335}}, {'position': 16, 'ti
+tle': 'Laxmi Kirana Store', 'place_id': '3162579577610100255', 'lsig': 'AB86z5UNz5G1SjMaibPCaagZbxwf', 'place_id_search': 'https://serpapi.com/search.json?device=desktop&engine=google&
+google_domain=google.com&location=rajasthan%2C+india&lsig=AB86z5UNz5G1SjMaibPCaagZbxwf&ludocid=3162579577610100255&q=kirana+store+ajmer&tbm=lcl', 'type': 'General store', 'address': 'T
+empo Stand, Nasirabad Road, Makhupura', 'phone': '+91 96802 30897', 'hours': 'Open ⋅ Closes 7PM', 'thumbnail': 'https://serpapi.com/searches/61bc36653824272fa7277f16/images/f3e84653e4a
+73315b165568a9e487dc0f41d42c69cb7aff55c555e1b2c43b986.png', 'gps_coordinates': {'latitude': 26.398272199999997, 'longitude': 74.6639965}}, {'position': 17, 'title': 'Kalyan Kirana Stor
+e', 'place_id': '13926979122115466090', 'lsig': 'AB86z5WWAbEZQCVJFCXRqGqiXhJn', 'place_id_search': 'https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.co
+m&location=rajasthan%2C+india&lsig=AB86z5WWAbEZQCVJFCXRqGqiXhJn&ludocid=13926979122115466090&q=kirana+store+ajmer&tbm=lcl', 'type': 'General store', 'address': 'Titori Titori', 'phone'
+: '+91 75680 29120', 'thumbnail': 'https://serpapi.com/searches/61bc36653824272fa7277f16/images/f3e84653e4a733155282e161526d571a7a1b728f2901284d4a29154369eb7559.png', 'gps_coordinates'
+: {'latitude': 26.5024193, 'longitude': 74.6359782}}, {'position': 18, 'title': 'TEJ KIRANA STORE', 'place_id': '6895041348483678208', 'lsig': 'AB86z5XxLkmbLSTIiWp_aoL9nNk9', 'place_id
+_search': 'https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&location=rajasthan%2C+india&lsig=AB86z5XxLkmbLSTIiWp_aoL9nNk9&ludocid=68950413484836782
+08&q=kirana+store+ajmer&tbm=lcl', 'type': 'General store', 'address': '03, Beawar Rd', 'phone': '+91 99280 96271', 'thumbnail': 'https://serpapi.com/searches/61bc36653824272fa7277f16/i
+mages/f3e84653e4a7331537f18d44d6b1cb4c03fe86eb86dbd7a2d543daf4bfc7814b.png', 'gps_coordinates': {'latitude': 26.4280911, 'longitude': 74.63413469999999}}, {'position': 19, 'title': 'Sh
+iv Kirana Store', 'place_id': '1688294155966314929', 'lsig': 'AB86z5Xbx7cNQWDCKAMT43CjIyfu', 'place_id_search': 'https://serpapi.com/search.json?device=desktop&engine=google&google_dom
+ain=google.com&location=rajasthan%2C+india&lsig=AB86z5Xbx7cNQWDCKAMT43CjIyfu&ludocid=1688294155966314929&q=kirana+store+ajmer&tbm=lcl', 'rating': 4.3, 'reviews': 9, 'type': 'General st
+ore', 'address': 'Nasirabad Road, Adarsh Nagar', 'phone': '+91 99281 08704', 'hours': 'Open ⋅ Closes 10PM', 'thumbnail': 'https://serpapi.com/searches/61bc36653824272fa7277f16/images/f
+3e84653e4a73315c5b84afd4762b607d8d9ae4545d5d9925d4ce4e6c21674b6.jpeg', 'gps_coordinates': {'latitude': 26.411472999999997, 'longitude': 74.652701}}, {'position': 20, 'title': 'R.K. Gen
+eral Store', 'place_id': '1144353549937165902', 'lsig': 'AB86z5VkWE-YY2koTxBNCjP1aqTY', 'place_id_search': 'https://serpapi.com/search.json?device=desktop&engine=google&google_domain=g
+oogle.com&location=rajasthan%2C+india&lsig=AB86z5VkWE-YY2koTxBNCjP1aqTY&ludocid=1144353549937165902&q=kirana+store+ajmer&tbm=lcl', 'type': 'General store', 'address': 'Ashan Gunj', 'ph
+one': '+91 94137 80339', 'hours': 'Open ⋅ Closes 9PM', 'thumbnail': 'https://serpapi.com/searches/61bc36653824272fa7277f16/images/f3e84653e4a73315430c7cc755b7059f21c002fe887e521c9e177c
+bff64c2b6d.png', 'gps_coordinates': {'latitude': 26.4477062, 'longitude': 74.63556539999999}}], 'pagination': {'current': 1, 'next': 'https://www.google.com/search?q=kirana+store+ajmer
+&tbm=lcl&ei=aTa8YaWLCrqkytMPpsqM-AE&start=20&sa=N&ved=2ahUKEwjl4_ipour0AhU6knIEHSYlAx8Q8NMDegUIAhDyAQ', 'other_pages': {'2': 'https://www.google.com/search?q=kirana+store+ajmer&tbm=lcl
+&ei=aTa8YaWLCrqkytMPpsqM-AE&start=20&sa=N&ved=2ahUKEwjl4_ipour0AhU6knIEHSYlAx8Q8tMDegUIAhDgAQ', '3': 'https://www.google.com/search?q=kirana+store+ajmer&tbm=lcl&ei=aTa8YaWLCrqkytMPpsqM
+-AE&start=40&sa=N&ved=2ahUKEwjl4_ipour0AhU6knIEHSYlAx8Q8tMDegUIAhDiAQ', '4': 'https://www.google.com/search?q=kirana+store+ajmer&tbm=lcl&ei=aTa8YaWLCrqkytMPpsqM-AE&start=60&sa=N&ved=2a
+hUKEwjl4_ipour0AhU6knIEHSYlAx8Q8tMDegUIAhDkAQ', '5': 'https://www.google.com/search?q=kirana+store+ajmer&tbm=lcl&ei=aTa8YaWLCrqkytMPpsqM-AE&start=80&sa=N&ved=2ahUKEwjl4_ipour0AhU6knIEH
+SYlAx8Q8tMDegUIAhDmAQ', '6': 'https://www.google.com/search?q=kirana+store+ajmer&tbm=lcl&ei=aTa8YaWLCrqkytMPpsqM-AE&start=100&sa=N&ved=2ahUKEwjl4_ipour0AhU6knIEHSYlAx8Q8tMDegUIAhDoAQ',
+ '7': 'https://www.google.com/search?q=kirana+store+ajmer&tbm=lcl&ei=aTa8YaWLCrqkytMPpsqM-AE&start=120&sa=N&ved=2ahUKEwjl4_ipour0AhU6knIEHSYlAx8Q8tMDegUIAhDqAQ', '8': 'https://www.goog
+le.com/search?q=kirana+store+ajmer&tbm=lcl&ei=aTa8YaWLCrqkytMPpsqM-AE&start=140&sa=N&ved=2ahUKEwjl4_ipour0AhU6knIEHSYlAx8Q8tMDegUIAhDsAQ', '9': 'https://www.google.com/search?q=kirana+
+store+ajmer&tbm=lcl&ei=aTa8YaWLCrqkytMPpsqM-AE&start=160&sa=N&ved=2ahUKEwjl4_ipour0AhU6knIEHSYlAx8Q8tMDegUIAhDuAQ', '10': 'https://www.google.com/search?q=kirana+store+ajmer&tbm=lcl&ei
+=aTa8YaWLCrqkytMPpsqM-AE&start=180&sa=N&ved=2ahUKEwjl4_ipour0AhU6knIEHSYlAx8Q8tMDegUIAhDwAQ'}}, 'serpapi_pagination': {'current': 1, 'next_link': 'https://serpapi.com/search.json?devic
+e=desktop&engine=google&google_domain=google.com&location=rajasthan%2C+india&q=kirana+store+ajmer&start=20&tbm=lcl', 'next': 'https://serpapi.com/search.json?device=desktop&engine=goog
+le&google_domain=google.com&location=rajasthan%2C+india&q=kirana+store+ajmer&start=20&tbm=lcl', 'other_pages': {'2': 'https://serpapi.com/search.json?device=desktop&engine=google&googl
+e_domain=google.com&location=rajasthan%2C+india&q=kirana+store+ajmer&start=20&tbm=lcl', '3': 'https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&loca
+tion=rajasthan%2C+india&q=kirana+store+ajmer&start=40&tbm=lcl', '4': 'https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&location=rajasthan%2C+india&
+q=kirana+store+ajmer&start=60&tbm=lcl', '5': 'https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&location=rajasthan%2C+india&q=kirana+store+ajmer&sta
+rt=80&tbm=lcl', '6': 'https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&location=rajasthan%2C+india&q=kirana+store+ajmer&start=100&tbm=lcl', '7': 'h
+ttps://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&location=rajasthan%2C+india&q=kirana+store+ajmer&start=120&tbm=lcl', '8': 'https://serpapi.com/sear
+ch.json?device=desktop&engine=google&google_domain=google.com&location=rajasthan%2C+india&q=kirana+store+ajmer&start=140&tbm=lcl', '9': 'https://serpapi.com/search.json?device=desktop&
+engine=google&google_domain=google.com&location=rajasthan%2C+india&q=kirana+store+ajmer&start=160&tbm=lcl', '10': 'https://serpapi.com/search.json?device=desktop&engine=google&google_d
+omain=google.com&location=rajasthan%2C+india&q=kirana+store+ajmer&start=180&tbm=lcl'}}}
