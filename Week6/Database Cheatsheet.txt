@@ -61,4 +61,17 @@ car_name TEXT,
 car_color INTEGER REFERENCES colors (color_id) ON DELETE CASCADE, //delete all data from corresponding tables. alt DELETE RESTRICT -> i'll not delete
 );
 
+output to json
+SELECT row_to_json(people) FROM people
+
+SELECT json_agg(row_to_json(public.pincodedetails))
+FROM public.pincodedetails
+
+COPY (
+  SELECT json_agg(row_to_json(public.pincodedetails)) :: text
+  FROM public.pincodedetails
+  WHERE meaning_of_life = 42;
+) to '/path/to/some/file.json';
+
+
 
