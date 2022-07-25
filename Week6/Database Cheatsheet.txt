@@ -74,4 +74,25 @@ COPY (
 ) to '/path/to/some/file.json';
 
 
+#delete duplicates. unique =cid
+DELETE FROM
+public.search_datastorage x
+USING public.search_datastorage y
+WHERE
+x.id > y.id
+AND x.cid = y.cid
+AND x.cid is not NULL;
+
+select count(*) from public.search_datastorage;
+
+
+#find duplicates
+select * from (
+  SELECT *,
+  ROW_NUMBER() OVER(PARTITION BY cid ORDER BY id asc) AS Row
+  FROM public.search_datastorage
+) dups
+where 
+dups.Row > 1
+
 

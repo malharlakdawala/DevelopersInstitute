@@ -2,6 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Week10/camelot" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Week3/Hackathon/HackathonFrontEnd" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Week7/Hackathon/Hackathon Git/AlgoTradingHackathon" vcs="Git" />
   </component>

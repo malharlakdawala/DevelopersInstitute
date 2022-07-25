@@ -1,0 +1,25 @@
+body {
+    background-image: url("https://i.giphy.com/media/TxVVB6PfWMjE4/200.webp")
+}
+
+.main {
+    text-align: center;
+}
+
+.star_wars_logo {
+    width: 40%;
+}
+
+.second_box {
+    margin: auto;
+    width: 40%;
+    height: 150px;
+    border: 3px solid yellow;
+    border-radius: 10px;
+    color: white;
+}
+
+.find_button {
+    margin-top: 30px;
+    font-size: 16px;
+}
