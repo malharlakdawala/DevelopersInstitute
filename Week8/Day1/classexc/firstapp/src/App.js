@@ -1,6 +1,11 @@
+import React from 'react';
+
 import Hello from "./Hello";
 import User from "./User"
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import OutlineTypesExample from './bootstrapcomponents';
+
 
 function App() {
     const users =[
