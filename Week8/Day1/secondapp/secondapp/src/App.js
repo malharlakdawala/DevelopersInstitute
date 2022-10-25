@@ -2,6 +2,7 @@
 import React from 'react';
 import './App.css';
 import './style.css';
+import SearchBox from "./components/SearchBox";
 import {Button} from "react-bootstrap";
 // import Users from './Users.json';
 // import Hello from "./Hello";
@@ -62,49 +63,60 @@ import 'tachyons';
 class App extends React.Component {
     constructor() {
         super();
-        this.state={
-            txt: "Hello World",
-            arr:[1,3,4],
-            users:[]
+        this.state = {
+            txt: "",
+            arr: [1, 3, 4],
+            users: []
         }
         console.log("constructor")
     }
 
     componentDidMount() {
         fetch('https://jsonplaceholder.typicode.com/users')
-            .then(res=> res.json())
-            .then(data=>{
+            .then(res => res.json())
+            .then(data => {
                 // console.log(data)
-                this.setState({users:data})
+                this.setState({users: data})
             })
-            .catch(err=>{
-                console.log("Error",err)
+            .catch(err => {
+                console.log("Error", err)
             })
         console.log("componentDidMount")
     }
 
-    handleUsers=()=>{
+    handleChange = (e) => {
+        console.log(e.target.value)
+        this.setState({txt: e.target.value})
+    }
+
+    handleUsers = () => {
         fetch('https://jsonplaceholder.typicode.com/users')
-            .then(res=> res.json())
-            .then(data=>{
+            .then(res => res.json())
+            .then(data => {
                 // console.log(data)
-                this.setState({users:data})
+                this.setState({users: data})
             })
-            .catch(err=>{
-                console.log("Error",err)
+            .catch(err => {
+                console.log("Error", err)
             })
 
     }
 
     render() {
+        const {users, txt} = this.state;
+        const filterusers = users.filter(item => {
+            return item.name.toLowerCase().includes(txt.toLowerCase());
+        })
+        console.log("text ", txt)
         console.log("render")
         console.log(this.state.arr)
         return (
             <div>
                 <h1>Users {this.state.txt}</h1>
+                <SearchBox searchFunction={this.handleChange}/>
                 <Button onClick={this.handleUsers}>Get Users</Button>
                 {
-                    this.state.users.map(item => {
+                    filterusers.map(item => {
                         return (
                             // <User key={item.id} name={item.name} username={item.username} email={item.email}/>
                             <User key={item.id} user={item}/>
