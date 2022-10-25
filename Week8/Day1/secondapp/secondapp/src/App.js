@@ -66,7 +66,8 @@ class App extends React.Component {
         this.state = {
             txt: "",
             arr: [1, 3, 4],
-            users: []
+            users: [],
+            input_search_text:""
         }
         console.log("constructor")
     }
@@ -88,6 +89,9 @@ class App extends React.Component {
         console.log(e.target.value)
         this.setState({txt: e.target.value})
     }
+    handleClick=()=>{
+        this.setState({input_search_text: this.state.txt})
+    }
 
     handleUsers = () => {
         fetch('https://jsonplaceholder.typicode.com/users')
@@ -103,9 +107,9 @@ class App extends React.Component {
     }
 
     render() {
-        const {users, txt} = this.state;
+        const {users, txt,input_search_text} = this.state;
         const filterusers = users.filter(item => {
-            return item.name.toLowerCase().includes(txt.toLowerCase());
+            return item.name.toLowerCase().includes(input_search_text.toLowerCase());
         })
         console.log("text ", txt)
         console.log("render")
@@ -113,7 +117,7 @@ class App extends React.Component {
         return (
             <div>
                 <h1>Users {this.state.txt}</h1>
-                <SearchBox searchFunction={this.handleChange}/>
+                <SearchBox searchFunction={this.handleChange} clickFunction={this.handleClick}/>
                 <Button onClick={this.handleUsers}>Get Users</Button>
                 {
                     filterusers.map(item => {
