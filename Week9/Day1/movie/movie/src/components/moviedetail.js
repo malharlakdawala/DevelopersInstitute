@@ -11,7 +11,7 @@ const Moviedetail = (props) => {
 }
 const mapDispatchToProps = (state) => {
     return {
-        movie: state.movie
+        movie: state.selectedMoviesReducer.movie
 
     }
 }

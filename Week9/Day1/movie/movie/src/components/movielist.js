@@ -24,7 +24,7 @@ const Movielist = (props) => {
 
 const mapStateTOProps = (state) => {
     return {
-        movies: state.movies
+        movies: state.moviesReducer.movies
     }
 }
 

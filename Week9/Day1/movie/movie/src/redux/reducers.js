@@ -1,3 +1,6 @@
+import {MOVIE_SELECTED} from './action'
+import {combineReducers} from "redux";
+
 const initState = {
     movies: [
         {title: 'Spider-Man: Homecoming', releaseDate: '05-07-2017', rating: 7.4,},
@@ -10,18 +13,20 @@ const initState = {
 
 }
 
-export const reducer = (state = initState, action ) => {
-    console.log("from reducer",action.payload)
+export const moviesReducer = (state = initState, action) => {
+    return {...state}
+}
 
-
+export const selectedMoviesReducer = (state = initState, action) => {
+    console.log("from reducer", action.payload)
     switch (action.type) {
-        case 'MOVIE_SELECTED':
+        case MOVIE_SELECTED:
             return {...state, movie: action.payload}
-
-
         default:
             return {...state}
-
     }
-
 }
+
+export const rootReducer = combineReducers({
+    moviesReducer, selectedMoviesReducer
+})
