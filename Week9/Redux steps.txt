@@ -1,0 +1,41 @@
+create 2 states and show in this.state.proper_one and this.state.proper_two
+
+
+npm i redux react-redux
+
+
+Actions->reduce->store->View
+
+Open actions.js
+reducers.js (add initState, export const reducer)
+
+goto index.js
+import {createStore} from "redux";
+import {reducer} from "./reducers";
+
+const {store} =createStore(reducer)
+
+can move above 3 lines to store.js
+
+in index.js
+import {Provider} from 'react-redux'
+
+root.render(
+    <React.StrictMode>
+        <Provider store={store}>
+            <App/>
+        </Provider>
+    </React.StrictMode>
+);
+
+in app.js
+import {connect} from 'react-redux'
+
+export default connect(mapStateToProps, null)(App);
+const mapStateToProps = (state) => {//state from reducer
+    return{
+        prop_one:state.property1
+    }
+
+}
+
